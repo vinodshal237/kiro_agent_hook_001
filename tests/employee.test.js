@@ -11,7 +11,7 @@ describe("getEmployeeById", () => {
         id: 1,
         name: "Vinod",
         department: "Engineering",
-        salary: 80000,
+        salary: 87000,
       });
     });
 
@@ -85,7 +85,7 @@ describe("getEmployeesByDepartment", () => {
       const result = getEmployeesByDepartment("Engineering");
       expect(result).toHaveLength(2);
       expect(result).toEqual([
-        { id: 1, name: "Vinod", department: "Engineering", salary: 80000 },
+        { id: 1, name: "Vinod", department: "Engineering", salary: 87000 },
         { id: 3, name: "Rahul", department: "Engineering", salary: 90000 },
       ]);
     });
