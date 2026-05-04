@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "name": "Generate Jest Unit Test Cases",
+  "description": "Automatically create unit test cases whenever there is new NodeJS function is written, if unit test case fine is not present , please create new unit test case file",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "src/*.js"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Whenever there is new funtion is created in /src/*.js location, please create jest unit test cases with positive and negative scenario, new test file should be created under tests folder eg example /tests/employee.test.js, if there is no change in code, no action is required, whenever there is change is code, detect and update unit test code accordinlgy. And if there is no test file present , create new test file."
+  },
+  "workspaceFolderName": "kiro002",
+  "shortName": "generate-jest-unit-test-cases"
+}
